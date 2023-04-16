@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/UP.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css" />
+    <title>CMSC Blog</title>
+  </head>
+  <body>
+    <div class="" id="top"></div>
+    <header><%- include('./partials/navbar') %></header>
+    <main class="d-felx flex-column">
+      <div class="home vh-100">
+        <div class="row justify-content-center m" id="home">
+          <div class="window col-lg-6">
+            <img src="images/home.png" alt="" id="window" />
+          </div>
+        </div>
+      </div>
+      <div class="" id="blogs"></div>
+      <div class="container mt-5">
+        <h1 class="fw-bolder mb-4">_blogs</h1>
+        <hr />
+
+        <div
+          class="d-flex flex-row flex-wrap justify-content-center align-items-center"
+        >
+          <% for(let i = 0; i < data.length; i++) {%>
+          <a href="/blog/<%=i %>" class="text-decoration-none">
+            <div class="card">
+              <img src="<%= data[i].image %>" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold"><%= data[i].title %></h5>
+                <p class="card-text text-dark"><%= data[i].sub %></p>
+              </div>
+            </div>
+          </a>
+          <% } %>
+        </div>
+      </div>
+    </main>
+    <%- include("./partials/footer") %>
+
+    <script src="app.js"></script>
+    <script src="bootstrap/bootstrap.bundle.js"></script>
+  </body>
+</html>

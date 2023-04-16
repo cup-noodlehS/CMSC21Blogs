@@ -1,0 +1,51 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+body {
+  background-color: rgb(12, 10, 27) !important;
+}
+.nav-link {
+  color: white !important;
+  font-size: 1.5rem !important;
+  transition: 200ms !important;
+}
+.nav-link:hover {
+  text-shadow: 0px 5px 4px white;
+  transform: translate(0, -0.5rem);
+}
+#up {
+  display: inline;
+  height: 1.5rem;
+  margin-right: 0.6rem;
+  transform: translate(0, -2px);
+}
+.window img {
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: 400ms !important;
+}
+.window img:hover {
+  transform: scale(102%);
+}
+.home {
+  background: url("./images/code.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  margin: 1rem;
+  width: 20rem;
+  transition: 200ms;
+}
+
+.card:hover {
+  transform: scale(103%);
+}
+@media only screen and (max-width: 600px) {
+  .window img {
+    margin-top: 10rem !important;
+  }
+}
