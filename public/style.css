@@ -7,7 +7,7 @@ body {
 }
 .nav-link {
   color: white !important;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
   transition: 200ms !important;
 }
 .nav-link:hover {

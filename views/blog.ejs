@@ -18,15 +18,15 @@
     <main
       class="d-felx flex-column container container-fluid align-items-center"
     >
-      <center>
-        <div class="col-lg-8 mb-2">
-          <img src="<%= blog.image %>" alt="" class="w-50 py-3" />
-          <h1 class="fw-bold"><%= blog.title %></h1>
-          <h5 class=""><%= blog.sub %></h5>
-          <div class="text-center"><%- blog.text %></div>
-        </div>
-        <a href="/#blogs" class="btn btn-dark mb-5">Go back</a>
-      </center>
+      <div
+        class="col-lg-8 mb-2 d-flex flex-column justify-content-center container-fluid align-items-center"
+      >
+        <img src="<%= blog.image %>" alt="" class="w-50 py-3" />
+        <h1 class="fw-bold"><%= blog.title %></h1>
+        <h5 class=""><%= blog.sub %></h5>
+        <div class="text-left"><%- blog.text %></div>
+      </div>
+      <a href="/#blogs" class="btn btn-dark mb-5">Go back</a>
     </main>
     <%- include("./partials/footer") %>
 
