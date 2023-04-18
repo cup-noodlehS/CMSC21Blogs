@@ -40,6 +40,16 @@
           </a>
           <% } %>
         </div>
+        <hr />
+        <div class="container mt-5" id="joke">
+          <h1 class="fw-bolder mb-4">wanna_hear_a_joke?</h1>
+          <p class="text-center"><%- joke %></p>
+          <center>
+            <form action="/joke" method="post">
+              <button class="btn btn-dark">Give me another one!</button>
+            </form>
+          </center>
+        </div>
       </div>
     </main>
     <%- include("./partials/footer") %>
