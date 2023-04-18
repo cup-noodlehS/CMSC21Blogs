@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="/images/UP.png" type="image/x-icon" />
     <link rel="stylesheet" href="/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>CMSC Blog</title>
   </head>
   <body>
     <div class="" id="top"></div>
     <header><%- include('./partials/navbar') %></header>
     <main class="d-felx flex-column">
-      <div class="home vh-100">
+      <div class="home vh-100 container-fluid">
         <div class="row justify-content-center m" id="home">
           <div class="window col-lg-6">
             <img src="images/home.png" alt="" id="window" />
@@ -31,21 +32,30 @@
           <% for(let i = 0; i < data.length; i++) {%>
           <a href="/blog/<%=i %>" class="text-decoration-none">
             <div class="card">
-              <img src="<%= data[i].image %>" class="card-img-top" alt="..." />
+              <img
+                src="<%= data[i].image %>"
+                class="card-img-top p-1"
+                alt="..."
+                style="border-radius: 3%"
+              />
               <div class="card-body">
-                <h5 class="card-title fw-semibold"><%= data[i].title %></h5>
-                <p class="card-text text-dark"><%= data[i].sub %></p>
+                <h5 class="card-title fw-semibold text-light">
+                  <%= data[i].title %>
+                </h5>
+                <p class="card-text text-light"><%= data[i].sub %></p>
               </div>
             </div>
           </a>
           <% } %>
         </div>
         <hr />
-        <div class="container mt-5" id="joke">
+        <div class="container my-5 container-fluid" id="joke">
           <h1 class="fw-bolder mb-4">wanna_hear_a_joke?</h1>
           <p class="text-center joketext"><%- joke %></p>
           <center>
-            <button class="btn btn-dark jokebtn">Give me another one!</button>
+            <button class="btn btn-dark jokebtn mb-5">
+              Give me another one!
+            </button>
           </center>
         </div>
       </div>

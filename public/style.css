@@ -53,3 +53,7 @@ body {
 .navbar-toggler-icon {
   filter: brightness(500%);
 }
+
+.card {
+  background-color: #1a1638 !important;
+}
