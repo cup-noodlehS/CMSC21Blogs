@@ -43,16 +43,16 @@
         <hr />
         <div class="container mt-5" id="joke">
           <h1 class="fw-bolder mb-4">wanna_hear_a_joke?</h1>
-          <p class="text-center"><%- joke %></p>
+          <p class="text-center joketext"><%- joke %></p>
           <center>
-            <form action="/joke" method="post">
-              <button class="btn btn-dark">Give me another one!</button>
-            </form>
+            <button class="btn btn-dark jokebtn">Give me another one!</button>
           </center>
         </div>
       </div>
     </main>
     <%- include("./partials/footer") %>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script src="app.js"></script>
     <script src="bootstrap/bootstrap.bundle.js"></script>

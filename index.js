@@ -32,9 +32,6 @@ app.get("/blog/:id", (req, res) => {
   blog = data[id];
   res.render("blog", { blog });
 });
-app.post("/joke", (req, res) => {
-  res.redirect("/#joke");
-});
 
 port = 3000;
 app.listen(port, () => console.log("server running port", port));
