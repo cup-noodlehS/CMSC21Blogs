@@ -44,11 +44,6 @@ body {
 .card:hover {
   transform: scale(103%);
 }
-@media only screen and (max-width: 600px) {
-  .window img {
-    margin-top: 10rem !important;
-  }
-}
 
 .navbar-toggler-icon {
   filter: brightness(500%);
@@ -67,4 +62,15 @@ body {
   background-position: center !important;
   background-repeat: no-repeat !important;
   border-radius: 3% !important;
+}
+#joke {
+  width: 50% !important;
+}
+@media only screen and (max-width: 600px) {
+  .window img {
+    margin-top: 10rem !important;
+  }
+  #joke {
+    width: 100% !important;
+  }
 }
