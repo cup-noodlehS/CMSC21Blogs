@@ -27,7 +27,12 @@
         <h1 class="fw-bold"><%= blog.title %></h1>
         <h5 class="mb-2"><%= blog.sub %></h5>
         <div class="text-left"><%- blog.text %></div>
-        <a href="/#blogs" class="btn btn-dark my-3 align-self-end">Go back</a>
+        <button
+          class="btn btn-dark my-3 align-self-end"
+          onclick="history.back()"
+        >
+          Go back
+        </button>
       </div>
     </main>
     <%- include("./partials/footer") %>
