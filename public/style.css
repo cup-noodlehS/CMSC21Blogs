@@ -60,3 +60,9 @@ body {
 .textarea {
   background-color: #1a1638 !important;
 }
+
+.card-img-top {
+  height: 300px !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
