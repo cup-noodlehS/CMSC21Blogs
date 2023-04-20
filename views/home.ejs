@@ -32,12 +32,12 @@
           <% for(let i = 0; i < data.length; i++) {%>
           <a href="/blog/<%=i %>" class="text-decoration-none">
             <div class="card">
-              <img
-                src="<%= data[i].image %>"
-                class="card-img-top p-1"
-                alt="..."
-                style="border-radius: 3%"
-              />
+              <div class="p-1">
+                <div
+                  class="card-img-top"
+                  style="background-image: url('.<%= data[i].image %>')"
+                ></div>
+              </div>
               <div class="card-body">
                 <h5 class="card-title fw-semibold text-light">
                   <%= data[i].title %>
