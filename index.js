@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const ejsMate = require("ejs-mate");
-const data = require("./blog.json");
-const axios = require("axios");
+const data = require("./blog.json"); //data file
+const axios = require("axios"); //for jokes api
 
 app.engine("ejs", ejsMate);
 app.set("views", path.join(__dirname, "views"));
